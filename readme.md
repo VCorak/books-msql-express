@@ -27,3 +27,5 @@
 * what is difference between mysql2 and mysql?? Do I need an upgrade?
 - stackoverflow says it is just faster and securer, so maybe I don't need it for now...and pooling is better, whatever that means...have to check that out.
 
+6. In helper.js I added some methods to return offset of pagination and used help from this page (https://www.sqlshack.com/learn-mysql-what-is-pagination/)
+* maybe it was not necessary for this small project, but I wanted to check it out
