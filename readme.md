@@ -35,4 +35,5 @@
 10. Wiring up books endpoint and running app again with node index.js, in the browser http://localhost:3000/books
 ### Obstacles on board:
 * could not connect to database, got some strange errors, Sicco hopped in to help, managed to resolved it but now I can just see empty data array...sooo
-something is wrong again...
+something is wrong again... 
+  *(https://www.npmjs.com/package/mysql2#using-connection-pool) - on this link tryed to find is it maybe something in this execute function...maybe is database itself??
