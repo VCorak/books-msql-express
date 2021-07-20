@@ -19,4 +19,11 @@
 
 1. Created structure of my project, boilerplate with directories and files
 2. Connect server to port 3000 (should I create .env for password??)
-3. Make a GitHub repo and commit so far# books-msql-express
+3. Make a GitHub repo called books-msql-express and commit so far
+4. Add some comments in every file to actually understand what they are for
+5. Link Node.js server with mysql
+
+### Obstacles on board:
+* what is difference between mysql2 and mysql?? Do I need an upgrade?
+- stackoverflow says it is just faster and securer, so maybe I don't need it for now...and pooling is better, whatever that means...have to check that out.
+
