@@ -2,16 +2,18 @@
 // One of them is db.js, used to talk with the MySQL database and enabling
 // running queries
 
-const mysql = require('mysql/promise');
+const mysql = require('mysql2/promise');
 const config = require('../config');
 
-async function query(sql, params) {
+async function getBooks(sql, params) {
     const connection = await mysql.createConnection(config.db);
-    const [results] = await connection.execute(sql, params);
-
+    const results = await connection.execute[sql, params];
+// console.log(results);
     return results;
+
 }
 
+
 module.exports = {
-    query
+    getBooks
 }

@@ -13,11 +13,14 @@ const config = require('../config');
 
 async function getMultiple(page = 1) {
     const offset = helper.getOffset(page, config.listPerPage);
-    const rows = await db.query(`SELECT id, name, author, genre, review FROM books LIMIT ?,?`,
+    const rows = await db.getBooks(`SELECT id, name, author, genre, review FROM books_data LIMIT ?,?`,
         [offset, config.listPerPage]);
+    console.log('Hey valentina');
 
     const data = helper.emptyOrRows(rows);
     const meta = {page};
+
+    console.log(data);
 
     return {
         data, meta
