@@ -32,4 +32,7 @@
 7. Connect the database and enable running queries on database in services/db.js
 8. At services/books.js wrote the bridge between route and database
 9. Creating route to get books from db, if not show error
-10.
+10. Wiring up books endpoint and running app again with node index.js, in the browser http://localhost:3000/books
+### Obstacles on board:
+* could not connect to database, got some strange errors, Sicco hopped in to help, managed to resolved it but now I can just see empty data array...sooo
+something is wrong again...
