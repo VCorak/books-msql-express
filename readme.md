@@ -29,3 +29,4 @@
 
 6. In helper.js I added some methods to return offset of pagination and used help from this page (https://www.sqlshack.com/learn-mysql-what-is-pagination/)
 * maybe it was not necessary for this small project, but I wanted to check it out
+7. Connect the database and enable running queries on database in services/db.js
