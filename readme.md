@@ -31,3 +31,5 @@
 * maybe it was not necessary for this small project, but I wanted to check it out
 7. Connect the database and enable running queries on database in services/db.js
 8. At services/books.js wrote the bridge between route and database
+9. Creating route to get books from db, if not show error
+10.
