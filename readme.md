@@ -40,7 +40,7 @@ something is wrong again...
 * still get the 'undefined' on localhost:3000/books...have to move on, will come back to it later
 * not getting undefined more but not sure if it is working yet...
   
-  ![Moving on...](https://gph.is/2Af28gy.gif)
+  ![Moving on...](https://media.giphy.com/media/dB1uOaPFJhNZ5IomHY/giphy.gif)
   
 11. Post, add a new book
 12. Update book
@@ -54,4 +54,4 @@ something is wrong again...
 ## BIGGER CONCLUSION
 
 Api does not work, still can not see any data, don't know what is wrong with my life and sorry backend but have to let it go for now, my frontend is suffering...
-![Giving up...](http://gph.is/145mpu6.gif)
+![Giving up...](https://media.giphy.com/media/GyLc9e3hTYFWw/giphy.gif)
