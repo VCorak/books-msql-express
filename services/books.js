@@ -15,7 +15,7 @@ async function getMultiple(page = 1) {
     const offset = helper.getOffset(page, config.listPerPage);
     const rows = await db.getBooks(`SELECT id, name, author, genre, review FROM books_data LIMIT ?,?`,
         [offset, config.listPerPage]);
-    console.log('Hey valentina');
+    // console.log('Hey valentina');
 
     const data = helper.emptyOrRows(rows);
     const meta = {page};
@@ -29,7 +29,7 @@ async function getMultiple(page = 1) {
 
 // POST A NEW BOOK- for this to be accessible need to add a route to link it up
 async function create(books) {
-    const result = await db.getBooks(`INSERT INTO books (name, author, 
+    const result = await db.getBooks(`INSERT INTO books_data (name, author, 
                    genre, review) VALUES (?, ?, ?, ?, ?))`, [
                        books.name, books.author, books.genre, books.review
     ]);
@@ -45,7 +45,7 @@ async function create(books) {
 
 // UPDATE BOOK- wire up with route and put endpoint
 async function update(id, books) {
-    const result = await db.getBooks(`UPDATE books SET name=?, author=?, 
+    const result = await db.getBooks(`UPDATE books_data SET name=?, author=?, 
                    genre=?, review=? WHERE id=?`, [
         id, books.name, books.author, books.genre, books.review
     ]);
@@ -61,7 +61,7 @@ async function update(id, books) {
 
 // REMOVE BOOK- wire up with route
 async function remove(id) {
-    const result = await db.getBooks(`DELETE FROM books WHERE id=?`, [id]);
+    const result = await db.getBooks(`DELETE FROM books_data WHERE id=?`, [id]);
 
     let message = 'Error in deleting books';
 

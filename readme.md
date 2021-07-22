@@ -1,6 +1,6 @@
 # My way to downfall project:  Connect database and build API
 
-## MISSION 1
+## MISSION 
 
 1. **Create database of favourite books in DataGrip**
     
@@ -44,3 +44,13 @@ something is wrong again...
 11. Post, add a new book
 12. Update book
 13. Delete book
+
+## CONCLUSION
+
+* I followed instructions from blog https://blog.logrocket.com/node-js-express-js-mysql-rest-api-example/ step by step and can say I do understand what is going on. I took my time for this, even more than I should, tried my best to understand errors but just can not display books data for now.
+* Do I understand backend now more (with express, php is still no no)? Yes, I do (even if it's not working). Do I like it? No. Will I make this work one day? Maybe, really want to get it what is going on here... 
+
+## BIGGER CONCLUSION
+
+Api does not work, still can not see any data, don't know what is wrong with my life and sorry backend but have to let it go for now, my frontend is suffering...
+![Giving up...](http://gph.is/145mpu6)
