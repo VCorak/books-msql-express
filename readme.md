@@ -39,7 +39,8 @@ something is wrong again...
 * (https://www.npmjs.com/package/mysql2#using-connection-pool) - on this link tried to find is it maybe something in this execute function...maybe is database itself??
 * still get the 'undefined' on localhost:3000/books...have to move on, will come back to it later
 * not getting undefined more but not sure if it is working yet...
-  ![Moving on...](https://gph.is/2Af28gy)
+  
+  ![Moving on...](https://gph.is/2Af28gy.gif)
   
 11. Post, add a new book
 12. Update book
@@ -53,4 +54,4 @@ something is wrong again...
 ## BIGGER CONCLUSION
 
 Api does not work, still can not see any data, don't know what is wrong with my life and sorry backend but have to let it go for now, my frontend is suffering...
-![Giving up...](http://gph.is/145mpu6)
+![Giving up...](http://gph.is/145mpu6.gif)
