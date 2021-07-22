@@ -21,8 +21,10 @@ app.use((err, req, res, next) => {
     console.error(err.message, err.stack);
     res.status(statusCode).json({'message': err.message});
 
+    return;
+
 })
 
 app.listen(port, () => {
-    console.log(`App listening at http://${port}`)
+    console.log(`App listening at http://localhost:${port}`)
 })

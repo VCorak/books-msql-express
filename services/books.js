@@ -27,6 +27,22 @@ async function getMultiple(page = 1) {
     }
 }
 
+// POST A NEW BOOK- for this to be accessible need to add a route to link it up
+async function create(books) {
+    const result = await db.query(`INSERT INTO books (id, name, author, 
+                   genre, review) VALUES (?, ?, ?, ?, ?))`, [
+                       books.id, books.name, books.author, books.genre, books.review
+    ]);
+
+    let message = 'Error in creating books';
+
+    if (result.affectedRows) {
+        message ='Books created!'
+    }
+
+    return {message};
+}
+
 module.exports = {
-    getMultiple
+    getMultiple, create
 }

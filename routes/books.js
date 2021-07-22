@@ -15,6 +15,16 @@ router.get('/', async function(req, res, next) {
     }
 })
 
+// POST BOOKS!
+router.post('/', async function(req, res, next) {
+    try {
+        res.json(await books.create(req.body));
+    } catch (err) {
+        console.error(`Error while creating books`, err.message);
+        next(err);
+    }
+});
+
 module.exports = router;
 
 // try to get books to route; if not successful show error

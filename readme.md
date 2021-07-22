@@ -35,5 +35,12 @@
 10. Wiring up books endpoint and running app again with node index.js, in the browser http://localhost:3000/books
 ### Obstacles on board:
 * could not connect to database, got some strange errors, Sicco hopped in to help, managed to resolved it but now I can just see empty data array...sooo
-something is wrong again... 
-  *(https://www.npmjs.com/package/mysql2#using-connection-pool) - on this link tryed to find is it maybe something in this execute function...maybe is database itself??
+something is wrong again...
+* (https://www.npmjs.com/package/mysql2#using-connection-pool) - on this link tried to find is it maybe something in this execute function...maybe is database itself??
+* still get the 'undefined' on localhost:3000/books...have to move on, will come back to it later
+* not getting undefined more but not sure if it is working yet...
+  ![Moving on...](https://gph.is/2Af28gy)
+  
+11. Post, add a new book
+12. Update book
+13. Delete book
