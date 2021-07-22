@@ -29,9 +29,9 @@ async function getMultiple(page = 1) {
 
 // POST A NEW BOOK- for this to be accessible need to add a route to link it up
 async function create(books) {
-    const result = await db.query(`INSERT INTO books (id, name, author, 
+    const result = await db.getBooks(`INSERT INTO books (name, author, 
                    genre, review) VALUES (?, ?, ?, ?, ?))`, [
-                       books.id, books.name, books.author, books.genre, books.review
+                       books.name, books.author, books.genre, books.review
     ]);
 
     let message = 'Error in creating books';
@@ -43,6 +43,35 @@ async function create(books) {
     return {message};
 }
 
+// UPDATE BOOK- wire up with route and put endpoint
+async function update(id, books) {
+    const result = await db.getBooks(`UPDATE books SET name=?, author=?, 
+                   genre=?, review=? WHERE id=?`, [
+        id, books.name, books.author, books.genre, books.review
+    ]);
+
+    let message = 'Error in updating books';
+
+    if (result.affectedRows) {
+        message ='Books updated!'
+    }
+
+    return {message};
+}
+
+// REMOVE BOOK- wire up with route
+async function remove(id) {
+    const result = await db.getBooks(`DELETE FROM books WHERE id=?`, [id]);
+
+    let message = 'Error in deleting books';
+
+    if (result.affectedRows) {
+        message ='Books deleted!'
+    }
+
+    return {message};
+}
+
 module.exports = {
-    getMultiple, create
+    getMultiple, create, update, remove
 }

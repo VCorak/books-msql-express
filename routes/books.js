@@ -25,6 +25,26 @@ router.post('/', async function(req, res, next) {
     }
 });
 
+// PUT, UPDATE BOOKS!
+router.put('/:id', async function(req, res, next) {
+    try {
+        res.json(await books.update(req.params.id, req.body));
+    } catch (err) {
+        console.error(`Error while updating books`, err.message);
+        next(err);
+    }
+});
+
+// DELETE BOOKS!
+router.delete('/:id', async function(req, res, next) {
+    try {
+        res.json(await books.remove(req.params.id));
+    } catch (err) {
+        console.error(`Error while deleting books`, err.message);
+        next(err);
+    }
+});
+
 module.exports = router;
 
 // try to get books to route; if not successful show error
