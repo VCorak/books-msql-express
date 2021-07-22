@@ -8,12 +8,11 @@ const config = require('../config');
 // execute - helper which will prepare and query the statement
 async function getBooks(sql, params) {
     const connection = await mysql.createConnection(config.db);
-    const results = connection.execute[sql, params];
-console.log(results);
+    const results = await connection.execute[sql, params];
+// console.log(results);
     return results;
 
 }
-
 
 module.exports = {
     getBooks

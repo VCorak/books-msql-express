@@ -1,10 +1,9 @@
 //  This file will have configurations like the database credentials and rows per page
 //  we want to show when we paginate results.
-
 const config = {
     db: {
         host: 'localhost',
-        user: 'root',
+        user:  'root',
         password: 'password',
         database: 'books',
     },
